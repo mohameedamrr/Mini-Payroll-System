@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginScene1Controller">
+   <children>
+      <Label alignment="CENTER" layoutY="50.0" prefHeight="18.0" prefWidth="800.0" text="Login Screen">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="148.0" prefHeight="18.0" prefWidth="800.0" text="Mini Payroll System">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="266.0" prefHeight="54.0" prefWidth="170.0" text="Username">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="355.0" prefHeight="54.0" prefWidth="170.0" text="Password">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="268.0" layoutY="273.0" prefHeight="40.0" prefWidth="351.0" promptText="Please Enter Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="268.0" layoutY="362.0" prefHeight="40.0" prefWidth="351.0" promptText="Please Enter Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="loginButton" layoutX="353.0" layoutY="448.0" mnemonicParsing="false" onAction="#login" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutY="509.0" prefHeight="18.0" prefWidth="800.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageTime" fitHeight="160.0" fitWidth="174.0" layoutX="619.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/Time.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

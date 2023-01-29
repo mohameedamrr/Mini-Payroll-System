@@ -1,0 +1,13 @@
+.root{
+        -fx-background-color: #c5c7c9
+
+}
+.label{
+        -fx-font-family: "Helvetica";
+        -fx-text-fill: "black";
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #B4C6E7;
+    }

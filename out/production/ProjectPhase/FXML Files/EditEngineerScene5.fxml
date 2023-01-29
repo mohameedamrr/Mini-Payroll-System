@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EditEngineerScene5Controller">
+   <children>
+      <Label alignment="CENTER" layoutY="27.0" prefHeight="70.0" prefWidth="800.0" text="Edit Engineer">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="100.0" prefHeight="54.0" prefWidth="428.0" text="You Are About to Edit Engineer with ID: ">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="IDLabel" layoutX="537.0" layoutY="109.0" prefHeight="35.0" prefWidth="72.0">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="212.0" prefHeight="35.0" prefWidth="290.0" text="Choose the value you want to edit:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBox" layoutX="331.0" layoutY="217.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label fx:id="ValueLabel" layoutX="159.0" layoutY="329.0" prefHeight="27.0" prefWidth="155.0" text="Please Enter Value:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ValueTextField" layoutX="331.0" layoutY="328.0" prefHeight="30.0" prefWidth="418.0" promptText="Enter Value">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="submitButton" layoutX="360.0" layoutY="413.0" mnemonicParsing="false" onAction="#editEngineer" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutY="473.0" prefHeight="47.0" prefWidth="800.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="546.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="81.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="703.0" layoutY="546.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="81.0" text="Exit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageError" fitHeight="160.0" fitWidth="174.0" layoutX="596.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Media/CrabError.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageSuccess" fitHeight="160.0" fitWidth="174.0" layoutX="596.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Media/CrabOk.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

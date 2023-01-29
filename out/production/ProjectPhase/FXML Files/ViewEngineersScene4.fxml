@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ViewEngineersScene4Controller">
+    <children>
+        <TableView fx:id="engineerTable" layoutX="25.0" layoutY="71.0" onMouseClicked="#getSelected" prefHeight="462.0" prefWidth="758.0">
+            <columns>
+                <TableColumn fx:id="Name" prefWidth="134.4000244140625" text="Name" />
+                <TableColumn fx:id="ID" prefWidth="95.199951171875" text="ID" />
+                <TableColumn fx:id="Age" prefWidth="84.79998779296875" text="Age" />
+                <TableColumn fx:id="Position" prefWidth="136.79998779296875" text="Position" />
+                <TableColumn fx:id="workingHours" prefWidth="157.60003662109375" text="Working Hours" />
+                <TableColumn fx:id="Salary" prefWidth="147.19998779296873" text="Salary" />
+            </columns>
+        </TableView>
+        <Label alignment="CENTER" layoutX="-2.0" layoutY="2.0" prefHeight="70.0" prefWidth="800.0" text="Engineers List">
+            <font>
+                <Font name="System Bold" size="48.0" />
+            </font>
+        </Label>
+        <Button fx:id="BackButton" layoutX="14.0" layoutY="544.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="81.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+        <Button fx:id="ExitButton" layoutX="701.0" layoutY="544.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="81.0" text="Exit">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+        <Button fx:id="DeleteButton" layoutX="237.0" layoutY="544.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="81.0" text="Delete" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+        <Button fx:id="EditButton" layoutX="464.0" layoutY="544.0" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="81.0" text="Edit" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+    </children>
+</AnchorPane>
