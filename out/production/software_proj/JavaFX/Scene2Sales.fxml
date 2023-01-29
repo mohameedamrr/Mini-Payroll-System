@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Scene2SalesController">
+    <children>
+        <TableView fx:id="tableView" layoutX="28.0" layoutY="83.0" onMouseClicked="#getSelected" onMousePressed="#getSelected" prefHeight="487.0" prefWidth="758.0">
+            <columns>
+                <TableColumn fx:id="Name" prefWidth="103.99999713897705" text="Car Name " />
+                <TableColumn fx:id="Year" prefWidth="88.79995727539062" text="Year" />
+                <TableColumn fx:id="Description" minWidth="0.0" prefWidth="96.79994201660156" text="Car Description" />
+                <TableColumn fx:id="Price" prefWidth="97.5999755859375" text="Price" />
+                <TableColumn fx:id="Type" prefWidth="89.5999755859375" text="Type" />
+                <TableColumn fx:id="quantity" prefWidth="72.800048828125" text="Quantity" />
+                <TableColumn fx:id="Color" prefWidth="104.79998779296875" text="Color" />
+                <TableColumn fx:id="Model" prefWidth="111.20001220703125" text="Model" />
+            </columns>
+        </TableView>
+        <Button fx:id="sellButton" layoutX="348.0" layoutY="576.0" mnemonicParsing="false" onAction="#sellCar" prefHeight="44.0" prefWidth="114.0" text="Sell" visible="false">
+            <font>
+                <Font name="Times New Roman" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="exitButton" layoutX="732.0" layoutY="576.0" mnemonicParsing="false" onAction="#exit" prefHeight="21.0" prefWidth="67.0" text="Exit">
+            <font>
+                <Font name="Times New Roman" size="18.0" />
+            </font>
+        </Button>
+      <Label fx:id="myLabel" layoutX="14.0" layoutY="20.0" prefHeight="54.0" prefWidth="291.0" text="Browse Car Specs">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackButton" layoutX="14.0" layoutY="576.0" mnemonicParsing="false" onAction="#back" prefHeight="21.0" prefWidth="67.0" text="Back">
+         <font>
+             <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
