@@ -1,0 +1,29 @@
+.root{
+        -fx-background-color: #2C365E
+
+}
+.label{
+        -fx-font-family: "Times New Roman";
+        -fx-text-fill: "white";
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #011c75;
+    }
+context-menu {
+-fx-background-color: white;
+
+}
+
+ContextMenuContent {
+    -fx-background-color: white;
+
+}
+.choice-box  {
+   -fx-background-color: white;
+}
+.choice-box .label {
+  -fx-background-color: white; /* works */
+  -fx-text-fill: "black";
+}
